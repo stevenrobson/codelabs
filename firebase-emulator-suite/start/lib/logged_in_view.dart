@@ -18,7 +18,7 @@ class LoggedInView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: get name from Firebase User
-    final name = 'Person';
+    final name = state.user!.displayName ?? 'No Name';
     return Scaffold(
       backgroundColor: Colors.blue[300],
       body: Column(

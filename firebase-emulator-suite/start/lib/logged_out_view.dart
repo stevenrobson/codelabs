@@ -24,9 +24,9 @@ class LoggedOutView extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () async {
                   // TODO: update email and password
-                  await state.logIn('TODO', 'TODO').then((_) {
+                  await state.logIn('robsons@gmail.com', 'godfather').then((_) {
                     // TODO: update to check that state.user is not null
-                    if (true) {
+                    if (state.user != null) {
                       Navigator.of(context).pushReplacementNamed('/home');
                     }
                   });
